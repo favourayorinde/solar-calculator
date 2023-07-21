@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;
+    500;600;700&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+    <nav>
+        <a href="http://tubimenergy.com" class="back-home"> <- home</a>
+        <img src="images/email sig.png" alt="">
+    </nav>
+    <section class="hero-section">
+        <div class="hero-image">
+            <img src="images/longg.png" alt="house">
+        </div>
+        <div class="hero-text">
+            <div>
+                <h1>Solar Calculator</h1>
+                <p class="separator">_________</p>
+                <p>
+                    <br>
+                    Welcome to the Solar Calculator! 
+                    <br><br>
+                    Here, you can figure out how much your load your 
+                    appliances generate, 
+                    and figure out which bundle is best for you,
+                    <br><br>
+                    To get started, click on add appliances.
+                    Keep adding the appliances that you own, 
+                    <br><br>
+                    While you do this, We'll show you what your 
+                    load requirements are
+                    + the perfect bundle for you!
+                </p>
+            </div>
+        </div>  
+     
+    </section>
+
+
+    <section class="calculator-section">
+        
+        <div class="calculator-display">
+                <!-- <div class="appliance-card">
+                    <div class="rating-delete">
+                        <div class="power-rating">
+                            <p class="label">Power rating</p>
+                            <p class="value">200w</p>
+                        </div>
+                        <div class="delete">
+                            <button> &times; <span>Delete</span></button>
+                        </div>
+                    </div>
+                    <div class="item-quantity-box">
+                        <div class="item-select">
+                            <select name="select-item" class="select-products">
+                                <option value="laptop">Laptop</option>
+                                <option value="laptop">Tv</option>
+                            </select>
+                        </div>
+                        <div class="item-quantity">
+                            <div class="item-quantity-operation">-</div>
+                            <div class="item-count">01</div>
+                            <div class="item-quantity-operation">+</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="appliance-card">
+                    <div class="rating-delete">
+                        <div class="power-rating">
+                            <p class="label">Power rating</p>
+                            <p class="value">200w</p>
+                        </div>
+                        <div class="delete">
+                            <button> &times; <span>Delete</span></button>
+                        </div>
+                    </div>
+                    <div class="item-quantity-box">
+                        <div class="item-select">
+                            <select name="select-item" class="select-products">
+                                <option value="laptop">Laptop</option>
+                                <option value="laptop">Tv</option>
+                            </select>
+                        </div>
+                        <div class="item-quantity">
+                            <div class="item-quantity-operation">-</div>
+                            <div class="item-count">01</div>
+                            <div class="item-quantity-operation">+</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="appliance-card">
+                     <div class="rating-delete">
+                        <div class="power-rating">
+                            <p class="label">Power rating</p>
+                            <p class="value">200w</p>
+                        </div>
+                        <div class="delete">
+                            <button> &times; <span>Delete</span></button>
+                        </div>
+                    </div>
+                    <div class="item-quantity-box">
+                        <div class="item-select">
+                            <select name="select-item" class="select-products">
+                                <option value="laptop">Laptop</option>
+                                <option value="laptop">Tv</option>
+                            </select>
+                        </div>
+                        <div class="item-quantity">
+                            <div class="item-quantity-operation">-</div>
+                            <div class="item-count">01</div>
+                            <div class="item-quantity-operation">+</div>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="add-new-card">
+                    <button id="addBtn">New+</button>
+                </div>
+        </div>
+        <div class="total-power">
+            <p>Total Load:&nbsp;</p>
+            <h3><span id="total-power">0</span>&nbsp;watts</h3>
+        </div>
+        <button type="submit" class="get-results">Get Results!</button>
+    </section>
+    
+    <section class="power-results" id="results">
+        <div class="power-requirements">
+            <p>Component <br>recommentations:</p>
+            <ul>
+                <li id="inverter">A 1.5kva inverter</li>
+                <li id="batteries">2 &times; 220Ah batteries</li>
+                <li id="solar-panels">2 &times; 250w solar panels</li>
+            </ul>
+            <br>
+            <input type="checkbox" name="panel-choice" id="panel-choice" checked>
+            <label for="panel-choice">I want Panels</label>
+        </div>
+        <div class="power-recommendations">
+            <p>Bundle <br>recommendations:</p>
+            <div class="product-main">
+                <div class="product-icon">
+                    <img src="images/Premiumbundlewithpanels1.png" alt="">
+                </div>
+                <div class="name-price">
+                    <div class="name">Premium Bundle</div>
+                    <div class="price">NGN 2,500,000</div>
+                </div> 
+            </div>
+                <a class="other-bundles" href="https://tubimenergy.com/collections/all">
+                    Other Bundles ->
+                </a>
+
+        </div>
+    </section>
+    
+    <section class="footer-section">
+        <div class="footer-Text">Tubimenergy copyright Here</div>
+    </section>
+
+</body>
+</html>
